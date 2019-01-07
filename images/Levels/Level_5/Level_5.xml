@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialog>
+    <Entry trigger="L3_GardenerBlock" speaker="Gardener" r="0.8" g="0.6" b="0.6" endAction="L3_Gardener2"
+        content="Sorry, no-one's getting through. There's a monster creating a huge ruckus in the mushroom grove. Best you turn around and head back the way you came."/>
+    <Entry trigger="L3_Gardener2" speaker="" r="1" g="1" b="1" endAction="L3_Gardener3"
+        content="Sir, I believe a young girl may back there somewhere, please I have to help her."/>
+    <Entry trigger="L3_Gardener3" speaker="Gardener" r="0.8" g="0.6" b="0.6" endAction="L3_Gardener4"
+        content="Nope. You're not going to change my mind. Besides, that 'girl' you speak of is nothing but trouble."/>
+    <Entry trigger="L3_Gardener4" speaker="" r="1" g="1" b="1" endAction="DEACTIVATE" inventory="gardenerSpoken"
+        content="I need to figure out a way to get past him..."/>
+
+    <Entry trigger="L3_Cart" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="It's filled with dried grass and soil."/>
+
+    <Entry trigger="L3_Daffodils" speaker="" r="1" g="1" b="1" endAction="L3_GetDaffodil" requires="gardenerSpoken"
+        content="Just like the dried ones from the chest... Maybe, if I give one of these to Enid..."/>
+    <Entry trigger="L3_GetDaffodil" speaker="Inventory" r="0.7" g="1.0" b="0.8" endAction="L3_GardenerAngry" inventory="Daffodil" gfx="Collectible items\daffodil.png" gfxX="1759" gfxY="84"
+        content="You picked a Daffodil..."/>
+    <Entry trigger="L3_GardenerAngry" speaker="Gardener" r="0.8" g="0.6" b="0.6" endAction="DEACTIVATE"
+        content="HEY! How dare you!! I'll get you for that!!"/>
+    
+    <Entry trigger="L3_Mushrooms" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="Huge mushrooms, similar to the one that house from earlier was carved from."/>
+</Dialog>
+
+<Terrain>
+    <Background imageFile="outside room5 groundnwalls.jpg" navFile="outside room5 hitbox.png"/>
+    <Obstacle id="BLOCK"       imageFile="invisibleBlock.png" navFile="invisibleBlock_hitbox.png" anim="0" posx="2984" posy="224"/>
+    <Obstacle id="Gardener"    imageFile="Gardener idle.png"  navFile="Gardener hitbox.png" anim="1" animFrames="31" cols="8" rows="4" posx="3500" posy="161" trigger="L3_GardenerBlock" />
+    <Obstacle id="flowerbed_1" imageFile="outside room5 flowerbed1.png" navFile="outside room5 flowerbed1 hitbox.png" anim="0" posx="817" posy="367" trigger="L3_Daffodils"/>
+    <Obstacle id="flowerbed_2" imageFile="outside room5 flowerbed2.png" navFile="outside room5 flowerbed2 hitbox.png" anim="0" posx="890" posy="487" trigger="L3_Daffodils"/>
+    <Obstacle id="flowerbed_3" imageFile="outside room5 flowerbed3.png" navFile="outside room5 flowerbed3 hitbox.png" anim="0" posx="1076" posy="508" trigger="L3_Daffodils"/>
+    <Obstacle id="cart"        imageFile="outside room5 object6.png" navFile="outside room5 object6 hitbox.png" anim="0" posx="275" posy="1325" trigger="L3_Cart"/>
+    <Obstacle id="mushroom_1"  imageFile="outside room5 object9.png" navFile="outside room5 object9 hitbox.png" anim="0" posx="2928" posy="1371" trigger="L3_Mushrooms" />
+    <Obstacle id="mushroom_2"  imageFile="outside room5 object8.png" navFile="outside room5 object8 hitbox.png" anim="0" posx="3123" posy="1521" trigger="L3_Mushrooms" />
+    <Obstacle id="mushroom_3"  imageFile="outside room5 object7.png" navFile="outside room5 object7 hitbox.png" anim="0" posx="2456" posy="1012" trigger="L3_Mushrooms" />
+</Terrain>

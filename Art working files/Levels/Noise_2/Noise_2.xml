@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Terrain>
+    <Background imageFile="overload room noise2.jpg" navFile="overload room noise2 hitbox.png" />
+    <Obstacle id="rune_1" imageFile="overload room noise2 rune1.png" anim="1" animFrames="8" cols="1" rows="8" posx="2001" posy="868"/>
+    <Obstacle id="rune_2" imageFile="overload room noise2 rune2.png" anim="1" animFrames="8" cols="1" rows="8" posx="3057" posy="1457"/>
+    <Obstacle id="rune_3" imageFile="overload room noise2 rune4.png" anim="1" animFrames="8" cols="1" rows="8" posx="2606" posy="2045"/>
+    <Obstacle id="rune_8" imageFile="overload room noise2 rune1.png" anim="1" animFrames="8" cols="1" rows="8" posx="703" posy="461"/>
+    <Obstacle id="rune_5" imageFile="overload room noise2 rune1.png" anim="1" animFrames="8" cols="1" rows="8" posx="1286" posy="1781"/>
+    <Obstacle id="rune_6" imageFile="overload room noise2 rune4.png" anim="1" animFrames="8" cols="1" rows="8" posx="2034" posy="1715"/>
+    <Obstacle id="rune_7" imageFile="overload room noise2 rune2.png" anim="1" animFrames="8" cols="1" rows="8" posx="1193" posy="1044"/>
+    <Obstacle id="rune_4" imageFile="overload room noise2 rune3.png" anim="1" animFrames="8" cols="1" rows="8" posx="1426" posy="2343"/>
+
+    <Obstacle id="hint_1" imageFile="overload room noise2 rune1.png" anim="1" animFrames="8" cols="1" rows="8" posx=" 440" posy="2700"/>
+    <Obstacle id="hint_2" imageFile="overload room noise2 rune2.png" anim="1" animFrames="8" cols="1" rows="8" posx=" 880" posy="2700"/>
+    <Obstacle id="hint_3" imageFile="overload room noise2 rune4.png" anim="1" animFrames="8" cols="1" rows="8" posx="1320" posy="2700"/>
+    <Obstacle id="hint_4" imageFile="overload room noise2 rune3.png" anim="1" animFrames="8" cols="1" rows="8" posx="1760" posy="2700"/>
+    <Obstacle id="hint_5" imageFile="overload room noise2 rune1.png" anim="1" animFrames="8" cols="1" rows="8" posx="2200" posy="2700"/>
+    <Obstacle id="hint_6" imageFile="overload room noise2 rune4.png" anim="1" animFrames="8" cols="1" rows="8" posx="2640" posy="2700"/>
+    <Obstacle id="hint_7" imageFile="overload room noise2 rune2.png" anim="1" animFrames="8" cols="1" rows="8" posx="3080" posy="2700"/>
+    <Obstacle id="hint_8" imageFile="overload room noise2 rune1.png" anim="1" animFrames="8" cols="1" rows="8" posx="3520" posy="2700"/>
+
+</Terrain>
+
+<!-- button order: r1, r2, r4, r3, r1, r4, r2, r1 -->

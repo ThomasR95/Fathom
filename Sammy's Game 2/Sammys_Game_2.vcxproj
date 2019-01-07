@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E4D40B7-0CA7-4DCF-973E-E138F229F09D}</ProjectGuid>
+    <RootNamespace>SammysGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <ProjectName>Sammy's Game</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10;$(IncludePath)</IncludePath>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <CodeAnalysisRuleSet>C:\Program Files (x86)\Microsoft Visual Studio 14.0\Team Tools\Static Analysis Tools\Rule Sets\NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\OneDrive\SFML-2.4.2\include;D:\OneDrive\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui;D:\OneDrive\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui-sfml;D:\OneDrive\sfeMovie-master\include;D:\OneDrive\sfeMovie-master\src;D:\OneDrive\sfeMovie-master\FFmpeg\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>D:\OneDrive\SFML-2.4.2\lib;D:\OneDrive\Sammy's game\Sammy's Game 2 - Electric Boogaloo\Sammy's Game 2\tinyxml2\tinyxml2\Debug-Lib;D:\OneDrive\sfeMovie-master\bin\bin;D:\OneDrive\sfeMovie-master\bin\FFmpeg-binaries\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfeMovie-s-d.lib;avformat.lib;avdevice.lib;avcodec.lib;avutil.lib;swscale.lib;swresample.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;winmm.lib;gdi32.lib;sfml-graphics-s-d.lib;opengl32.lib;freetype.lib;jpeg.lib;sfml-audio-s-d.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;tinyxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\OneDrive\SFML-2.4.2\include;D:\OneDrive\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui;D:\OneDrive\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui-sfml;D:\OneDrive\sfeMovie-master\include;D:\OneDrive\sfeMovie-master\src;D:\OneDrive\sfeMovie-master\FFmpeg\include</AdditionalIncludeDirectories>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-system-s.lib;sfml-window-s.lib;winmm.lib;gdi32.lib;sfml-graphics-s.lib;opengl32.lib;freetype.lib;jpeg.lib;sfml-audio-s.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;tinyxml2.lib;avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;swresample.lib;swscale.lib;sfeMovie-s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\OneDrive\SFML-2.4.2\lib;D:\OneDrive\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tinyxml2\tinyxml2\Release-Lib;D:\OneDrive\sfeMovie-master\bin\FFmpeg-binaries\lib;D:\OneDrive\sfeMovie-master\bin\bin</AdditionalLibraryDirectories>
+      <Version>1.0</Version>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Anim.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Dialog.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\engine.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameObjects.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameStateBase.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameStates.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GfxBase.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Default.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Enter.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Exit.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Falling.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Idle.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_6.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_7.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tMovie.cpp" />
+    <ClCompile Include="GS_Level_5.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_1.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_2.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_3.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_4.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui-sfml\imgui-SFML.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\main.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\NPC.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Obstacle.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Player.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\resourceManager.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tButton.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tEffector.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Terrain.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tInterpolator.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tSprite.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tText.cpp" />
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Anim.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Dialog.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\engine.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameObjects.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameStateBase.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameStates.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GfxBase.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Default.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Enter.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Exit.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Falling.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Idle.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_6.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_7.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tMovie.h" />
+    <ClInclude Include="GS_Level_5.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_1.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_2.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_3.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_4.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui-sfml\imconfig-SFML.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui-sfml\imgui-SFML.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui\imconfig.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui\imgui.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\NPC.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Obstacle.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Player.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\resourceManager.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tButton.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tEffector.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Terrain.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tInterpolator.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tSprite.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tText.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\typedefs.h" />
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\World.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

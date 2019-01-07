@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialog>
+    <Entry trigger="H1_Barrel" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="Just as before, this seems to be used as storage."/>
+
+    <Entry trigger="H1_Bookcase" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="The books are pretty well organised, you notice most of them are about welsh mythology and history -- somehow you find yourself knowing that this is something Enid is highly interested in."/>
+
+    <Entry trigger="H1_Bench" speaker="" r="1" g="1" b="1" endAction="REWIND"
+        content="I'm close now, no time for rest."/>
+
+    <Entry trigger="H1_Fireplace" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="This looks like an ancient stove, or fireplace of some sort. By the looks of the ash, it must be used often."/>
+
+    <Entry trigger="H1_BedsideTable" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND" btnL="286" btnT="650" btnW="176" btnH="325"
+        content="Filled with feathers, more than before."/>
+
+    <Entry trigger="H1_Bed" speaker="" r="0.7" g="0.7" b="0.7" endAction="H1_Note"
+        content="There seems to be a small note under one of the pillows:"/>
+
+    <Entry trigger="H1_Note" speaker="Note" r="1.0" g="0.7" b="0.7" endAction="H1_Note2" gfx="Collectible items\message hut house.png" gfxX="1233" gfxY="299" content="" />
+    <Entry trigger="H1_Note2" speaker="Note" r="1.0" g="0.7" b="0.7" endAction="REWIND" inventory="Note_4"  gfx="Collectible items\message1 back hut house.png" gfxX="1233" gfxY="299" content="" />
+
+
+    <Entry trigger="H1_CheeseTable" speaker="" r="1" g="1" b="1" endAction="H1_Cheese"
+        content="Hm, a piece of cheese could come in handy I suppose."/>
+
+    <Entry trigger="H1_Cheese" speaker="Inventory" r="0.7" g="1.0" b="0.8" endAction="DEACTIVATE" inventory="Cheese" gfx="Collectible items\cheese chunk.png" gfxX="1507" gfxY="730"
+        content="You got some cheese!"/>
+
+    <Entry trigger="H1_Chest" speaker="" r="0.7" g="0.7" b="0.7" endAction="H1_Note3"
+        content="Inside the chest, you find some pressed daffodils, as well as a small note:"/>
+
+    <Entry trigger="H1_Note3" speaker="Note" r="1.0" g="0.7" b="0.7" endAction="H1_Note4" gfx="Collectible items\message hut chest.png" gfxX="1233" gfxY="299" content="" />
+    <Entry trigger="H1_Note4" speaker="Note" r="1.0" g="0.7" b="0.7" endAction="REWIND" inventory="Note_5"  gfx="Collectible items\message hut chest back.png" gfxX="1233" gfxY="299" content="" />
+
+    <Entry trigger="H1_NoExit" speaker="" r="1" g="1" b="1" endAction="DEACTIVATE" 
+        content="Surely there must be something here to help me understand her..."/>
+
+</Dialog>
+
+<Terrain>
+    <Background imageFile="inside house1 bg.jpg" navFile="inside house1 ground hitbox.png"/>
+    <!-- <Obstacle id="ground" imageFile="inside house1 ground.png" navFile="inside house1 ground hitbox.png" anim="0" posx="0" posy="0" alwaysBehind="1"/> -->
+    <Obstacle id="bookcase" imageFile="inside house1 object7.png" navFile="inside house1 object7 hitbox.png" anim="0" posx="1239" posy="155" trigger="H1_Bookcase"/>
+    <Obstacle id="chest"        imageFile="inside house1 object5.png" navFile="inside house1 object5 hitbox.png" anim="0" posx="2444" posy="640" trigger="H1_Chest"/>
+    <Obstacle id="bench" imageFile="inside house1 object6.png" navFile="inside house1 object6 hitbox.png" anim="0" posx="1734" posy="917" trigger="H1_Bench"/>
+    <Obstacle id="lightbeams" imageFile="inside house1 light beams.png" navFile="inside house1 light beams hitbox.png" anim="0" posx="773" posy="151" collide="0"/>
+    <Obstacle id="stove" imageFile="inside house1 object1.png" navFile="inside house1 object1 hitbox.png" anim="0" posx="2975" posy="320" trigger="H1_Fireplace"/>
+    <Obstacle id="barrel" imageFile="inside house1 object8.png" navFile="inside house1 object8 hitbox.png" anim="0" posx="640" posy="972" trigger="H1_Barrel"/>
+    <Obstacle id="boots" imageFile="inside house1 object9.png" navFile="inside house1 object9 hitbox.png" anim="0" posx="227" posy="1871"/>
+    <Obstacle id="cheesetable" imageFile="inside house1 object3.png" navFile="inside house1 object3 hitbox.png" anim="0" posx="815" posy="1975" trigger="H1_CheeseTable"/>
+    <Obstacle id="sidetable" imageFile="inside house1 object4.png" navFile="inside house1 object4 hitbox.png" anim="0" posx="2523" posy="1975" trigger="H1_BedsideTable"/>
+    <Obstacle id="bed" imageFile="inside house1 object2.png" navFile="inside house1 object2 hitbox.png" anim="0" posx="1615" posy="1238" trigger="H1_Bed"/>
+</Terrain>
+
+<!-- 82.56% -->

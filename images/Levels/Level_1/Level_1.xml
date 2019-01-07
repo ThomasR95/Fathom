@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialog>
+    <Entry trigger="L1_Intro" speaker="" r="1" g="1" b="1" endAction="DEACTIVATE" onStart="1"
+        content="W-wait!
+... Where am I? How did I get to... wherever here is?
+That girl looked like she knew something about this place, and looked distressed too.
+I get the feeling I'm here for... a purpose. Whatever that may be, I need to find out. "/>
+
+    <Entry trigger="L1_NoteOpen" speaker="" r="0.7" g="0.7" b="0.7" endAction="L1_Note"
+        content="Next to a rather odd, slimy looking creature, there appears to be a small piece of paper. It's rather ruined, but you can still read what it says:"/> 
+
+    <Entry trigger="L1_Note" speaker="Tattered Note" r="1.0" g="0.7" b="0.7" endAction="L1_Note2" inventory="Note_1" gfx="Collectible items\message under tree level 1.png" gfxX="1233" gfxY="299" content="" sfx="../sounds/Triggered/look at paper.ogg"/> 
+    <Entry trigger="L1_Note2" speaker="Tattered Note" r="1.0" g="0.7" b="0.7" endAction="REWIND" inventory="Note_1" gfx="Collectible items\message under tree  back level 1.png" gfxX="1233" gfxY="299" content="" /> 
+        <!-- I'm so glad I always have this place to myself! It's always so peaceful and quiet here, like my own tiny slice of forest just for me. 
+As is usual when I write my feelings down, I feel myself questioning if there's something seriously wrong with me. The world around me seems to find excitement and joy out of the loudest of places and things, but I find only pain and misery. 
+It's not even just the typical things, like booming music or a screaming baby - although those bother me too. Everytime I hear an airplane overhead or an ambulance passing by, I have to clutch my head, try and claw the noise out, sometimes I even have to run away because these noises create pictures of horrible monsters in my head that just want to see me dead - it's hard to even put into words how it makes me feel. 
+I'm not even safe at home, I hate the sounds the vacuum makes when mum cleans, I always scream at her to stop or maybe to warn me first but she always says I'm being stupid and overreacting. And maybe I am... I just don't know what to do... 
+So, anyway, that's why I like it here. I have only the soft chirping of the birds to keep me company, and their chatting doesn't offend my ears, it feels like they are comforting me. 
+-E"/>  -->
+
+    <Entry trigger="L1_BigPlant" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="This large plant seems to be how you entered this odd place."/>
+
+    <Entry trigger="L1_SmallPlants" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="These strange plants emit a soft glow from the ball in the centre, though nothing that can help you here."/>
+
+    <Entry trigger="L1_NoExit" speaker="" r="0.7" g="0.7" b="0.7" endAction="DEACTIVATE"
+        content="Before you leave, you notice strange eyes blinking at you from beneath a nearby tree."/>
+</Dialog>
+
+<Terrain>
+    <Background imageFile="room1 ground.jpg" navFile="room1 ground_nav.png" />
+    <Obstacle id="flower_0" imageFile="room1 object4.png" navFile="room1 object4 hitbox.png" anim="0" posx="2856" posy="445" trigger="L1_SmallPlants"/>
+    <Obstacle id="treeline" imageFile="room1 wallsb.png"  navFile="" anim="0" posx="0" posy="0"/>
+    <Obstacle id="flower_5" imageFile="room1 object3.png" navFile="room1 object3 hitbox.png" anim="0" posx="1753" posy="395" trigger="L1_SmallPlants"/>
+    <Obstacle id="flower_4" imageFile="room1 object2.png" navFile="room1 object2 hitbox.png" anim="0" posx="935" posy="603" trigger="L1_SmallPlants"/>
+    <Obstacle id="flower_2" imageFile="room1 object3.png" navFile="room1 object3 hitbox.png" anim="0" posx="2924" posy="1212" trigger="L1_SmallPlants"/>
+    <Obstacle id="flower_6" imageFile="room1 object1.png" navFile="room1 object1_nav.png" anim="0" posx="363" posy="1067" trigger="L1_BigPlant" />
+    <Obstacle id="flower_3" imageFile="room1 object4.png" navFile="room1 object4 hitbox.png" anim="0" posx="1602" posy="2052" trigger="L1_SmallPlants"/>
+    <Obstacle id="flower_1" imageFile="room1 object2.png" navFile="room1 object2 hitbox.png" anim="0" posx="2289" posy="1960" trigger="L1_SmallPlants"/>
+</Terrain>

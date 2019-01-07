@@ -1,0 +1,8 @@
+Level 3:
+Starling= 2843x463 (sits on top of that plant thingy)
+Dog= 1220x1451
+
+Level 5:
+Gardener idle= 3564x307
+Gardener block= 3508x307
+Gardener transform= 3484x307

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Terrain>
+    <Background imageFile="overload room noise3.png" navFile="overload room noise3 hitbox.png" />
+    <Obstacle id="lights" imageFile="overload room noise3 lights.png" anim="1" animFrames="2" cols="1" rows="2" fps="2" posx="1595" posy="1215"/>
+    <Obstacle id="eyes" imageFile="anm_Eyes.png" anim="1" animFrames="8" cols="2" rows="4" posx="1738" posy="835"/>
+    <Obstacle id="button_0" imageFile="button 1.png" posx="2957" posy="763"/>
+    <Obstacle id="button_1" imageFile="button 2.png" posx="2305" posy="813"/>
+    <Obstacle id="button_2" imageFile="button 3.png" posx="2646" posy="796"/>
+    <Obstacle id="button_3" imageFile="button 4.png" posx="2443" posy="1108"/>
+
+    <Obstacle id="hint_1" imageFile="overload room noise2 rune1.png" anim="1" animFrames="8" cols="1" rows="8" posx=" 440" posy="2700"/>
+    <Obstacle id="hint_2" imageFile="overload room noise2 rune2.png" anim="1" animFrames="8" cols="1" rows="8" posx=" 880" posy="2700"/>
+    <Obstacle id="hint_3" imageFile="overload room noise2 rune4.png" anim="1" animFrames="8" cols="1" rows="8" posx="1320" posy="2700"/>
+    <Obstacle id="hint_4" imageFile="overload room noise2 rune3.png" anim="1" animFrames="8" cols="1" rows="8" posx="1760" posy="2700"/>
+    <Obstacle id="hint_5" imageFile="overload room noise2 rune1.png" anim="1" animFrames="8" cols="1" rows="8" posx="2200" posy="2700"/>
+    <Obstacle id="hint_6" imageFile="overload room noise2 rune4.png" anim="1" animFrames="8" cols="1" rows="8" posx="2640" posy="2700"/>
+    <Obstacle id="hint_7" imageFile="overload room noise2 rune2.png" anim="1" animFrames="8" cols="1" rows="8" posx="3080" posy="2700"/>
+    <Obstacle id="hint_8" imageFile="overload room noise2 rune1.png" anim="1" animFrames="8" cols="1" rows="8" posx="3520" posy="2700"/>
+
+    <Obstacle id="teeth" imageFile="anm_Teeth.png" navFile="overload room noise3 teeth hitbox.png" anim="1" animFrames="7" cols="2" rows="4" posx="3102" posy="10" alwaysBehind="1"/>
+
+</Terrain>
+<!-- button order: r1, r2, r4, r3, r1, r4, r2, r1 -->

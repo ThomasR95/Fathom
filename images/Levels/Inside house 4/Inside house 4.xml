@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialog>
+    <Entry trigger="H4_Intro" speaker="" r="1" g="1" b="1" endAction="DEACTIVATE" onEntry="1"
+        content="I wasn't expecting... this. 
+This place looks so different to everywhere else here... As if everyone left in a hurry?"/>
+
+    <Entry trigger="H4_BarredDoor" speaker="" r="1" g="1" b="1" endAction="REWIND" btnL="3375" btnT="1052" btnW="164" btnH="437"
+        content="This door is locked tight, not even sure I would be able to open it even if I had a key, its blocked off."/>
+
+    <Entry trigger="H4_Box" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="These are empty..."/>
+
+    <Entry trigger="H4_Barrel" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="Nothing."/>
+
+    <Entry trigger="H4_Calendar" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="Someone has scribbled in red pen all over the calendar, the days are circled but only up to where the page was ripped off. "/>
+
+    <Entry trigger="H4_CalendarPage" speaker="" r="0.7" g="0.7" b="0.7" endAction="H4_CalendarNote" 
+        content="The missing calendar page! Just like the rest of it, this appears to have been scribbled on and ripped as if in anger. You can make out some writing on it:"/>
+
+    <Entry trigger="H4_CalendarNote" speaker="" r="1.0" g="0.0" b="0.0" endAction="H4_CalendarInfo" gfx="Collectible items\calender page .png" gfxX="518" gfxY="449" sfx="../sounds/Triggered/look at paper.ogg"
+        content="" />
+        <!-- They told me it was nothing, that they had everything under control -- but they LIED! 
+We're moving. Next week. I feel so empty but also so angry. 
+Why couldn't they have prepared me???!!! I DONT WANT TO LEAVE!!! WHY COULDN'T THEY HAVE SAID SOMETHING MORE I CAN'T MOVE, I HAVE NOTHING LE-- -->
+
+
+    <Entry trigger="H4_CalendarInfo" speaker="" r="0.7" g="0.7" b="0.7" endAction="H4_CalendarOutro" inventory="CalendarPage" gfx="Collectible items\calender page back.png" gfxX="518" gfxY="0"
+        content="There's a code on the other side: 
+9341"/>
+
+    <Entry trigger="H4_CalendarOutro" speaker="" r="1" g="1" b="1" endAction="DEACTIVATE"
+        content="This must be Enid as well! From before, she mentioned something about moving... 
+I feel like I'm close now, perhaps the last house will hold some answers."/>
+
+    <Entry trigger="H4_NoExit" speaker="" r="1" g="1" b="1" endAction="DEACTIVATE" 
+        content="That missing calendar page... it must be around here somewhere."/>
+
+</Dialog>
+
+<Terrain>
+    <Background imageFile="inside house 4 walls.jpg" navFile=""/>
+    <Obstacle id="bg"    imageFile="inside house 4 ground.png" navFile="inside house 4 ground hitbox.png" alwaysBehind='1'/>
+    <Obstacle id="barrels" imageFile="inside house 4 barrels.png" navFile="inside house 4 barrels hitbox.png" anim="0" posx="1100" posy="1127" />
+    <Obstacle id="calender" imageFile="inside house 4 calender.png" anim="0" posx="2915" posy="852" trigger="H4_Calendar"/>
+    <Obstacle id="calender_page" imageFile="inside house 4 calender page.png" anim="0" posx="2711" posy="1283" trigger="H4_CalendarPage"/>
+    <Obstacle id="box_1" imageFile="inside house 4 box.png" navFile="inside house 4 box hitbox.png" anim="0" posx="2659" posy="1431" trigger="H4_Box"/>
+    <Obstacle id="box_2" imageFile="inside house 4 box2.png" navFile="inside house 4 box2 hitbox.png" anim="0" posx="3079" posy="1408" trigger="H4_Box" />
+    <Obstacle id="barrel" imageFile="inside house 4 barrel.png" navFile="inside house 4 barrel hitbox.png" anim="0" posx="1820" posy="1655" trigger="H4_Barrel" />
+    <Obstacle id="shoe_1" imageFile="inside house 4 shoe1.png" navFile="inside house 4 shoe1 hitbox.png" anim="0" posx="2307" posy="1823" />
+    <Obstacle id="box_3" imageFile="inside house 4 box.png" navFile="inside house 4 box hitbox.png" anim="0" posx="1556" posy="2183" trigger="H4_Box" />
+    <Obstacle id="shoe_2" imageFile="inside house 4 shoe2.png" navFile="inside house 4 shoe2 hitbox.png" anim="0" posx="2414" posy="2199" />
+    <Obstacle id="shoe_3" imageFile="inside house 4 shoe3.png" navFile="inside house 4 shoe3 hitbox.png" anim="0" posx="2381" posy="2458" />
+</Terrain>

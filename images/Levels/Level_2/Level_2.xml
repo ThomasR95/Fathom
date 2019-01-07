@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialog>
+    <Entry trigger="L2_Rock" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="This rock seems to have fallen here recently. You're not strong enough to move it."/>
+
+    <Entry trigger="L2_SmallPlants" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="Some more of the strange, plant-like things."/>
+
+    <Entry trigger="L2_GoodBoy" speaker="" r="1" g="1" b="1" endAction="L2_BoofBoof"
+        content="Good boy!"/>
+    <Entry trigger="L2_BoofBoof" speaker="Hound" r="1" g="1" b="0.5" endAction="REWIND" sfx="../sounds/Triggered/Hound.ogg"
+        content="Boof Boof!"/>
+</Dialog>
+
+<Terrain>
+    <Background imageFile="room2 behind background.jpg" navFile="" scale="12"/>
+    <Obstacle id="river_bottom" imageFile="room2 river bottom.png"  navFile=""                          anim="1" animFrames="4" cols="1" rows="4" posx="204"     posy="2410" collide='0' alwaysBehind='1'/> 
+    <Obstacle id="river_top"    imageFile="room2 river top.png"     navFile=""                          anim="1" animFrames="4" cols="4" rows="1" posx="3255"    posy="118" collide='0' alwaysBehind='1'/> 
+    <Obstacle id="ground"       imageFile="room2 ground.png"        navFile="room2 hitbox.png"          anim="0" posx="0"       posy="0" alwaysBehind='1'/>
+    <Obstacle id="walls"        imageFile="room2 walls.png"         navFile=""                          anim="0" posx="0"       posy="0" alwaysBehind='1'/>
+    <Obstacle id="rock_0"       imageFile="room2 object1.png"       navFile="room2 object1 hitbox.png"  anim="0" posx="1934"    posy="8"/>
+    <Obstacle id="flower_1"     imageFile="room1 object2.png"       navFile="room1 object2 hitbox.png"  anim="0" posx="331"     posy="1162" trigger="L2_SmallPlants"/>
+    <Obstacle id="flower_2"     imageFile="room1 object3.png"       navFile="room1 object3 hitbox.png"  anim="0" posx="2774"    posy="943" trigger="L2_SmallPlants"/>
+    <Obstacle id="flower_3"     imageFile="room1 object4.png"       navFile="room1 object4 hitbox.png"  anim="0" posx="1026"    posy="1980" trigger="L2_SmallPlants" />
+    <Foreground id="branch_0"     imageFile="room2 object2.png"       posx="2648"    posy="2132" />
+</Terrain>

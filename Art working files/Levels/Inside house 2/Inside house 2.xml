@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialog>
+    <Entry trigger="H2_Intro" speaker="" r="1" g="1" b="1" endAction="DEACTIVATE" onEntry="1"
+        content="This place seems promising, perhaps the girl is here, or at least I can find something to help me understand what's happening. I should keep an eye out."/>
+
+    <Entry trigger="H2_Barrels" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="Just some barrels, looks like they're used for storage."/>
+
+    <Entry trigger="H2_LogSeats" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="They look quite comfortable, nice decor."/>
+
+    <Entry trigger="H2_Bench" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="No time for rest now."/>
+
+    <Entry trigger="H2_TableChairs" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="Solid pieces of furniture, though nothing out of the ordinary here."/>
+
+    <Entry trigger="H2_Picture" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND" btnL="286" btnT="650" btnW="176" btnH="325"
+        content="You've definitely seen this before, thinking hard you still can't seem to remember where. The sooner you discover what's going on the better."/>
+
+    <Entry trigger="H2_Bucket" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="A bucket full of water."/>
+
+    <Entry trigger="H2_Counter" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND" btnL="1534" btnT="616" btnW="786" btnH="407"
+        content="This looks like it may be used as a sort of kitchen, miscellaneous food and drink are stored beneath. Nothing that really helps though."/>
+
+    <Entry trigger="H2_Boxes" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="More storage containers, reminds you of something you might see in a new house."/>
+
+    <Entry trigger="H2_Cupboard" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="There's just more food and kitchen supplies in here."/>
+
+    <Entry trigger="H2_NoteOpen" speaker="" r="0.7" g="0.7" b="0.7" endAction="H2_Note"
+        content="Looks as if someone was drawing on the floor here, one of the pieces of paper has some writing on it:"/>
+
+    <Entry trigger="H2_Note" speaker="Note" r="1.0" g="0.7" b="0.7" endAction="H2_Note2" gfx="Collectible items\message mushroom house 1.png" gfxX="1233" gfxY="299" content="" />
+    <Entry trigger="H2_Note2" speaker="Note" r="1.0" g="0.7" b="0.7" endAction="REWIND" inventory="Note_2"  gfx="Collectible items\message mushroom house 1 back.png" gfxX="1233" gfxY="299" content="" />
+        <!-- Why am I so different? 
+I can't even talk to people properly, apparently I am supposed to look people in the eye, but I just can't do it. Maybe that's why I can't make friends? It's not that I don't want to, I would love to have someone else who is close to me I can play with and talk to, but it's just so hard.
+I know there are other kids who are shy like me, but even they seem to be able to talk to other people. I am happy on my own too, but sometimes I think I would just love someone else to speak to. 
+David at school said I must be an alien, cause I don't behave normal like everyone else, but I don't know if he's being serious or what. I don't understand 'sarcasm'. If people say something but mean something else -- what is the point? Why not just say what you mean?! People confuse me. 
+Anyway, mum says she's booked an appointment to see someone about my behaviour. I guess I'll see what happens, maybe they can tell me if I'm from this planet or not.
+Either way, at least I always have the animals, they don't care that I'm different. 
+-E"/>  -->
+
+    <Entry trigger="H2_NoExit" speaker="" r="0.7" g="0.7" b="0.7" endAction="DEACTIVATE"
+        content="You get the feeling there's more to find here."/>
+
+</Dialog>
+
+<Terrain>
+    <Background imageFile="inside house 2 walls.jpg" navFile=""/>
+    <Obstacle id="walls" imageFile="inside house 2 ground.png" navFile="inside house 2 ground hitbox.png" posx="0" posy="0" alwaysBehind="1"/>
+    <Obstacle id="paper" imageFile="inside house 2 paper.png" anim="0" posx="2056" posy="1330" trigger="H2_NoteOpen"/>
+    <Obstacle id="bucket" imageFile="inside house 2 bucket.png" navFile="inside house 2 bucket hitbox.png" anim="0" posx="1363" posy="819" trigger="H2_Bucket" />
+    <Obstacle id="table_chairs" imageFile="inside house 2 tablechairs.png" navFile="inside house 2 tablechairs hitbox.png" anim="0" posx="743" posy="947" trigger="H2_TableChairs"/>
+    <Obstacle id="box_1" imageFile="inside house 2 box_1.png" navFile="inside house 2 box_1 hitbox.png" anim="0" posx="2799" posy="975" trigger="H2_Boxes" />
+    <Obstacle id="box_2" imageFile="inside house 2 box_2.png" navFile="inside house 2 box_2 hitbox.png" anim="0" posx="2935" posy="907" trigger="H2_Boxes"/>
+    <Obstacle id="barrels" imageFile="inside house 2 barrels.png" navFile="inside house 2 barrels hitbox.png" anim="0" posx="131" posy="1507" trigger="H2_Barrels" />
+    <Obstacle id="box_2" imageFile="inside house 2 box_2.png" navFile="inside house 2 box_2 hitbox.png" anim="0" posx="3699" posy="1451" trigger="H2_Boxes"/>
+    <Obstacle id="bench" imageFile="inside house 2 bench.png" navFile="inside house 2 bench hitbox.png" anim="0" posx="1831" posy="1767" trigger="H2_Bench"/>
+    <Obstacle id="coffeetable" imageFile="inside house 2 coffee_table.png" navFile="inside house 2 coffee_table hitbox.png" anim="0" posx="1847" posy="1987" />
+    <Obstacle id="chair_1" imageFile="inside house 2 chair_1.png" navFile="inside house 2 chair_1 hitbox.png" anim="0" posx="1387" posy="1899" trigger="H2_LogSeats"/>
+    <Obstacle id="chair_2" imageFile="inside house 2 chair_2.png" navFile="inside house 2 chair_2 hitbox.png" anim="0" posx="2587" posy="1895" trigger="H2_LogSeats"/>
+    <Obstacle id="bench" imageFile="inside house 2 bench.png" navFile="inside house 2 bench hitbox.png" anim="0" posx="1826" posy="2348" trigger="H2_Bench"/>
+    <Obstacle id="lightbeams" imageFile="inside house 2 lightbeams.png" navFile="inside house 2 lightbeams hitbox.png" anim="0" posx="599" posy="119" />
+</Terrain>

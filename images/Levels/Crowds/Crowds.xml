@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Terrain>
+    <Background imageFile="overload room crowds.png" navFile="overload room crowds hitbox.png" />
+    <Obstacle id="group_9" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1493" posy="190"/>
+    <Obstacle id="group_8" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1873" posy="195"/>
+    <Obstacle id="group_18" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="2256" posy="208"/>
+    <Obstacle id="group_32" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="2596" posy="249"/>
+    <Obstacle id="group_29" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="1175" posy="289"/>
+    <Obstacle id="group_16" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="2946" posy="408"/>
+    <Obstacle id="group_26" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="2002" posy="540"/>
+    <Obstacle id="group_4" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="925" posy="553"/>
+    <Obstacle id="group_15" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="3332" posy="625"/>
+    <Obstacle id="group_5" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1388" posy="685"/>
+    <Obstacle id="group_24" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="1493" posy="671"/>
+    <Obstacle id="group_17" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="2519" posy="680"/>
+    <Obstacle id="group_35" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="562" posy="703"/>
+    <Obstacle id="group_22" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="2914" posy="826"/>
+    <Obstacle id="group_7" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1093" posy="849"/>
+    <Obstacle id="group_23" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="190" posy="903"/>
+    <Obstacle id="group_11" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="2301" posy="936"/>
+    <Obstacle id="group_6" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1766" posy="958"/>
+    <Obstacle id="group_33" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="2120" posy="985"/>
+    <Obstacle id="group_30" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="3509" posy="1030"/>
+    <Obstacle id="group_13" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1252" posy="1121"/>
+    <Obstacle id="group_36" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="607" posy="1121"/>
+    <Obstacle id="group_25" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="2529" posy="1134"/>
+    <Obstacle id="group_2" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1348" posy="1140"/>
+    <Obstacle id="group_31" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="3241" posy="1221"/>
+    <Obstacle id="group_19" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1593" posy="1298"/>
+    <Obstacle id="group_1" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="162" posy="1307"/>
+    <Obstacle id="group_10" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="807" posy="1339"/>
+    <Obstacle id="group_27" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="2950" posy="1384"/>
+    <Obstacle id="group_34" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="2174" posy="1411"/>
+    <Obstacle id="group_21" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="2556" posy="1535"/>
+    <Obstacle id="group_14" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1793" posy="1557"/>
+    <Obstacle id="group_20" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1212" posy="1588"/>
+    <Obstacle id="group_12" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="2302" posy="1716"/>
+    <Obstacle id="group_28" imageFile="overload room crowds group 1.png" navFile="overload room crowds group 1 hitbox.png" anim="0" posx="2074" posy="1902"/>
+    <Obstacle id="group_3" imageFile="overload room crowds group 2.png" navFile="overload room crowds group 2 hitbox.png" anim="0" posx="1747" posy="1951"/>
+</Terrain>

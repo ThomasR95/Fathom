@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Dialog>
+    <Entry trigger="L3_Bird" speaker="Bird" r="0.8" g="0.3" b="0.3" endAction="L3_Bird_2"
+        content="Hello stranger. You look lost, how did you get here?"/>
+    <Entry trigger="L3_Bird_2" speaker="" r="1" g="1" b="1" endAction="L3_Bird_3"
+        content="Oh, um hello. I don't know, I just... woke up here."/>
+    <Entry trigger="L3_Bird_3" speaker="Bird" r="0.8" g="0.3" b="0.3" endAction="L3_Bird_4"
+        content="You mean to tell me you do not remember what occurred before you came here?"/>
+    <Entry trigger="L3_Bird_4" speaker="" r="1" g="1" b="1" endAction="L3_Bird_5"
+        content="Do you know something? - Oh, sorry, I haven't even asked your name...?"/>
+    <Entry trigger="L3_Bird_5" speaker="Bird" r="0.8" g="0.3" b="0.3" endAction="L3_Bird_6"
+        content="What I am called does not matter, stranger. I do know many things, however it is not for me to explain, but to observe. Perhaps it is best you just forget about this place."/>
+    <Entry trigger="L3_Bird_6" speaker="" r="1" g="1" b="1" endAction="L3_Bird_7"
+        content="I feel that there is some reason for me being here, what kind of person would I be if I ignored this? I think it had something to do with that girl I saw."/>
+    <Entry trigger="L3_Bird_7" speaker="Bird" r="0.8" g="0.3" b="0.3" endAction="L3_Bird_8"
+        content="Girl you say? I do not know of a girl, but I know of a monster. Heed my warning, stranger, what you seek is impossible."/>
+    <Entry trigger="L3_Bird_8" speaker="" r="1" g="1" b="1" endAction="DEACTIVATE" inventory="birdSpokenTo"
+        content="Thanks anyway, goodbye."/>
+
+    <Entry trigger="L3_Curly" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="These look like some form of fungi... Magical fungi?"/>
+
+    <Entry trigger="L3_Hound" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="This dog looks frightening... Reminds you of some old stories. Despite his appearance he seems fairly friendly.  
+He looks hungry, maybe if you find something you can feed him."/>
+
+    <Entry trigger="L3_FeedHound" speaker="" r="0.7" g="0.7" b="0.7" endAction="DEACTIVATE" inventory="Hound" sfx="../sounds/Triggered/Hound.ogg"
+        content="The hound sniffs you curiously, smelling something tasty on you. You offer him the cheese, in the hopes he might help."/>
+
+    <Entry trigger="L3_Tree" speaker="" r="0.7" g="0.7" b="0.7" endAction="REWIND"
+        content="Sleeping under these in the midsummer warmth is an appealing thought, though currently it's night and you have a job to do."/>
+
+    <Entry trigger="L3_NoExit" speaker="" r="0.7" g="0.7" b="0.7" endAction="DEACTIVATE"
+        content="As you are about to leave, some movement atop a nearby plant catches your eye. That bird looks... strange."/>
+</Dialog>
+
+
+
+<Terrain>
+    <Background imageFile="outside room3 blackscreen.jpg" navFile="" scale="12"/>
+    <Obstacle id="river_top"        imageFile="outside room3 river top.png"         navFile=""          anim="1" animFrames="4" cols="1" rows="4" posx="560"  posy="0"      collide='0' alwaysBehind='1'/> 
+    <Obstacle id="river_bottom"     imageFile="outside room3 river bottom.png"      navFile=""          anim="1" animFrames="4" cols="4" rows="1" posx="0"    posy="541"    collide='0' alwaysBehind='1'/> 
+    <Obstacle id="ground"           imageFile="outside room3 ground.png"            navFile="outside room3 hitbox.png"          anim="0" posx="   0" posy="   0" alwaysBehind='1'/>
+    <Obstacle id="walls"            imageFile="outside room3 wall.png"              navFile=""                                  anim="0" posx="   0" posy="   0" alwaysBehind='1'/>
+    <Obstacle id="branch_0"         imageFile="outside room3 object8.png"           navFile="outside room3 object8 hitbox.png"  anim="0" posx="   0" posy="  45" />
+    <Obstacle id="plant_0"          imageFile="outside room3 object2.png"           navFile="outside room3 object2 hitbox.png"  anim="0" posx="2352" posy=" 263" trigger="L3_Curly"/>
+    <Obstacle id="plant_1"          imageFile="outside room3 object3.png"           navFile="outside room3 object3 hitbox.png"  anim="0" posx="3119" posy=" 644" trigger="L3_Curly"/>
+    <Obstacle id="plant_2"          imageFile="outside room3 object1.png"           navFile="outside room3 object1 hitbox.png"  anim="0" posx="2679" posy=" 527" trigger="L3_Curly"/>
+    <Obstacle id="plant_3"          imageFile="outside room3 object4.png"           navFile="outside room3 object4 hitbox.png"  anim="0" posx="3297" posy=" 994" trigger="L3_Curly"/>
+    <Obstacle id="starling"         imageFile="Starling_2.png"                        navFile=""                                  anim="1" animFrames="25" cols="13" rows="2" posx="2843" posy=" 463" trigger="L3_Bird"/>
+    <Obstacle id="plant_4"          imageFile="outside room3 object3.png"           navFile="outside room3 object3 hitbox.png"  anim="0" posx="3596" posy="1039" trigger="L3_Curly"/>
+    <Obstacle id="plant_5"          imageFile="outside room3 object5.png"           navFile="outside room3 object5 hitbox.png"  anim="0" posx="1693" posy="1943" trigger="L3_Curly"/>
+    <Obstacle id="treerocksign"     imageFile="outside room3 treerocksign.png"      navFile="outside room3 treerocksign hitbox.png"  anim="0" posx="3250" posy="0" />
+    <Obstacle id="tree_0"           imageFile="outside room3 object7.png"           navFile="outside room3 object7 hitbox.png"  anim="0" posx=" 127" posy="1135" trigger="L3_Tree"/>
+    <Obstacle id="tree_1"           imageFile="outside room3 object6.png"           navFile="outside room3 object6 hitbox.png"  anim="0" posx=" 331" posy=" 630" trigger="L3_Tree"/>
+</Terrain>

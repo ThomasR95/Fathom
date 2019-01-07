@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Gamestates">
+      <UniqueIdentifier>{adeedf78-9f6a-45c6-8c23-ea51c21bbb32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{5417c400-a858-41ca-b1ed-981c27f70338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gamestates\Underworld">
+      <UniqueIdentifier>{9a94bf77-09f7-4ca3-b711-1b5550832cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gamestates\Overworld">
+      <UniqueIdentifier>{c081e404-f808-49f7-8f6e-78a75bf6d803}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Enter.cpp">
+      <Filter>Source Files\Gamestates</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Exit.cpp">
+      <Filter>Source Files\Gamestates</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Idle.cpp">
+      <Filter>Source Files\Gamestates</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Anim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameObjects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GfxBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\resourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tEffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tInterpolator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tSprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Obstacle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui-sfml\imgui-SFML.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Default.cpp">
+      <Filter>Source Files\Gamestates</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\NPC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tMovie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Crowds.cpp">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Eye.cpp">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Falling.cpp">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Noise_2.cpp">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Noise_3.cpp">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_1.cpp">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_2.cpp">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_3.cpp">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_4.cpp">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_Level_5.cpp">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_6.cpp">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_7.cpp">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameStates.cpp">
+      <Filter>Source Files\Gamestates</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameStateBase.cpp">
+      <Filter>Source Files\Gamestates</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tCursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_House_1.cpp">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Final.cpp">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Enter.h">
+      <Filter>Source Files\Gamestates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Exit.h">
+      <Filter>Source Files\Gamestates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Idle.h">
+      <Filter>Source Files\Gamestates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Anim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameObjects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameStateBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GameStates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GfxBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\resourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tEffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tInterpolator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tSprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\typedefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Obstacle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\World.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui-sfml\imgui-SFML.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\imgui-sfml\imconfig-SFML.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Default.h">
+      <Filter>Source Files\Gamestates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\Dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\NPC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tMovie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Crowds.h">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Eye.h">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Falling.h">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Noise_2.h">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Noise_3.h">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_1.h">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_2.h">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_3.h">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_4.h">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_Level_5.h">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_6.h">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Level_7.h">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\tCursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_House_1.h">
+      <Filter>Source Files\Gamestates\Overworld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sammy%27s game\Sammy%27s Game 2 - Electric Boogaloo\Sammy%27s Game 2\GS_Final.h">
+      <Filter>Source Files\Gamestates\Underworld</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
