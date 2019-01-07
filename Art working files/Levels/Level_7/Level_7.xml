@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
-<Terrain>
-    <Background imageFile="outside room7 groundnwalls.jpg" navFile="outside room7 hitbox.png" />
-    <Obstacle id="dragonMouth" imageFile="outside room7 dragon mouth.png" navFile="" anim="0" posx="1870" posy="621" alwaysBehind="1"/>
-    <Obstacle id="dragonhead" imageFile="outside room7 dragon head.png" navFile="" anim="0" posx="1611" posy="11" />
-    <Obstacle id="dragonjaw" imageFile="outside room7 dragon jaw.png" navFile="outside room7 dragon jaw hitbox.png" anim="0" posx="1870" posy="621" />
-</Terrain>

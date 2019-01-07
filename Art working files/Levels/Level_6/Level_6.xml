@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
-<Terrain>
-    <Background imageFile="outside room6 ground.jpg" navFile="outside room6 hitbox.png" />
-    <Obstacle id="mushroom_1" imageFile="outside room6 mushroom1.png" navFile="outside room5 object9 hitbox.png" anim="0" posx="1331" posy="1023" />
-    <Obstacle id="mushroom_2" imageFile="outside room6 mushroom2.png" navFile="outside room5 object7 hitbox.png" anim="0" posx="1811" posy="323" />
-</Terrain>

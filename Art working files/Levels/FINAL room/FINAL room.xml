@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-
-<Terrain>
-    <Background imageFile="overload room FINAL.png" navFile="overload room FINAL hitbox.png" />
-    <Obstacle id="Enid_rock" imageFile="Enid Rock.png" navFile="" anim="1" animFrames="4" cols="4" rows="1" fps="4" posx="2575" posy="1095" />
-</Terrain>
