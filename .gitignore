@@ -2,9 +2,11 @@ IgnoreCommit/
 Debug/
 Release/
 x64/
-Project2/imgui/
-Project2/imgui-sfml/
-Project2/portaudio/
-Project2/Debug/
-Project2/Release/
+Art working files/
+Fathom_Release/
+Sammy's Game 2/imgui/
+Sammy's Game 2/imgui-sfml/
+Sammy's Game 2/portaudio/
+Sammy's Game 2/Debug/
+Sammy's Game 2/Release/
 .vs/
